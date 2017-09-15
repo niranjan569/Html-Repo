@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	<meta http-equiv="refresh" content="10;url=successpage.html" />
+	<meta charset="UTF-8">
+
+
+	<script type="text/javascript">
+	// set minutes
+	var mins = 47;
+
+	// calculate the seconds (don't change this! unless time progresses at a different speed for you...)
+	var secs = mins * 60;
+	function countdown() {
+		setTimeout('Decrement()',1000);
+	}
+	function Decrement() {
+		if (document.getElementById) {
+			minutes = document.getElementById("minutes");
+			seconds = document.getElementById("seconds");
+			// if less than a minute remaining
+			if (seconds < 59) {
+				seconds.value = secs;
+			} else {
+				minutes.value = getminutes();
+				seconds.value = getseconds();
+			}
+			secs--;
+			setTimeout('Decrement()',1000);
+		}
+	}
+	function getminutes() {
+		// minutes is seconds divided by 60, rounded down
+		mins = Math.floor(secs / 60);
+		return mins;
+	}
+	function getseconds() {
+		// take mins remaining (as seconds) away from total seconds remaining
+		return secs-Math.round(mins *60) ;
+	}
+
+	var value = 0;
+	function increase(){
+		value = value + 20;
+		if(value>=100) value = 100;
+		document.getElementById("progress").style.width = value + "%";
+		setTimeout(increase, 2000);
+	}
+	</script>
+	<style>
+	#main {
+		width: 800px;
+		height: 600px;
+		background-color: #000;
+		color:#9b9b9b;
+	}
+
+	.algn{
+
+		margin-top:83px;
+
+		color:red;
+
+	}
+
+	.button {
+		background-color: #323232;
+		height: 75px;
+		width: 380px;
+		border-radius: 10px;
+		margin-right: 5px;
+		text-align: center;
+		color: white;
+		padding-top: 25px;
+		font-size:17px;
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	.button:active{
+		background-color: rgb(140, 141,142);
+	}
+
+	#meter {
+		border: 5px solid rgb(50,50,50);
+		width: 650px;
+		background-color: rgb(50,50,50);
+		border-radius: 50px;
+	}
+	#progress {
+		background-color: rgb(0, 125, 195);
+		height: 55px;
+		border-radius: 50px;
+	}
+	.progressbar{
+		margin-left: 70px;
+		margin-top: -12px;
+	}
+
+	p{
+		position: absolute;
+		top: 215px;
+		left: 687px;
+		color: white;
+	}
+
+	</style>
+</head>
+
+<body onload="startTime(); dateFetch();">
+	<div id="main">
+		<header>
+			<div class="row">
+				<div class="col-sm-4";style=" font-size:17px">
+					&nbsp;System Ready
+				</div>
+				<div class="col-sm-4" id="time" style="text-align: center; font-size:17px"></div>
+				<div class="col-sm-4" id="date" style="text-align: right; font-size:17px "></div>
+			</div>
+		</header>
+
+		<div id="algn" >
+
+			<div id="timer" style=" margin-left: 58px;font-size:200px; font-weight:bold;border-color:#000;  ">
+
+				<input id="minutes" type="text" style="border: none; background-color:#000;font-size: 200px ; font-weight: bold; width: 220px ; color: white"> :
+				<input id="seconds" type="text" style="border: none; background-color:#000; font-size: 200px; font-weight: bold; width: 220px; color: white"> <h4> <p> Time <br>
+					Remaining </h4>
+				</p>
+
+
+			</div>
+			<br><br>
+
+			<div class="progressbar">
+				<div id='meter'><div id='progress' style="width: 0%;"></div> </div>
+			</div>
+
+			<div style="text-align:center;text-align: center; margin-top: 40px; color: white;">Current Stage : Warm Up Start
+			</div>
+			<div class="row" style="margin-top: 30px;margin-left: 12px;" >
+				<div class="button" style="padding: none; " onclick="location.href='index.html'">Cancle Cycle</div>
+				<div class="button" style="padding: none; ">Process Parameters</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<script >
+	countdown();
+	setTimeout(increase, 2000);
+	</script>
+</body>
+
+</html>

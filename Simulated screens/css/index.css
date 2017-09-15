@@ -1,0 +1,27 @@
+body {
+  background-image: url("../images/Splash.png");
+  background-repeat: no-repeat;
+  height:600px;width:800px;
+  color: white;
+}
+.lb1{
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 110px;
+  margin-top: 295px;
+}
+.lb2{
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 220px;
+}
+.lb3{
+  font-size: 22px;
+  text-align: center;
+  margin-top: 160px;
+}
+.lb4{
+  font-size: 16px;
+  margin-top: 45px;
+  margin-left: 45px;
+}

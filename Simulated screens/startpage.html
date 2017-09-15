@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/start.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="3;url=cycleinprogress.html" />
+  <title>Cycle history</title>
+</head>
+
+
+<body onload="startTime(); dateFetch();">
+  <header>
+    <div class="row">
+      <div class="col-sm-4">
+        &nbsp;System Ready
+      </div>
+      <div class="col-sm-4 col-xs-4" id="time" style="text-align: center;"></div>
+      <div class="col-sm-4 col-xs-4" id="date" style="text-align: right;"></div>
+    </div>
+  </header>
+  <div class="main font-white">
+    <div class="lb1">System Warming up....</div>
+    <div class="lb2">Cycle Will Automatically start</div>
+    <div class="cancelCycle" onclick="location.href='cycles.html'">Cancel Cycle</div>
+</div>
+</html>

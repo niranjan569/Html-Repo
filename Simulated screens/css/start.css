@@ -1,0 +1,30 @@
+.lb1{
+  font-size: 37px;
+  height: 100px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.lb2{
+  font-size: 37px;
+  height: 100px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.cancelCycle{
+  height: 75px;
+  width: 385px;
+  margin-left: 406px;
+  margin-top: 76px;
+  border-radius: 6px;
+  background-color: rgb(103, 200, 198);
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.cancelCycle:active{
+  background-color: rgb(164, 222, 221);
+}

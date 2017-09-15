@@ -1,0 +1,114 @@
+.standardright {
+  text-align: center;
+  width: 340px;
+  font-weight: bold;
+  font-size: 36px;
+  display: inline-block;
+}
+
+.standardleft {
+  height: 85px;
+  width: 420px;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 36px;
+}
+
+.bord {
+  border: 2px solid #323232;
+}
+
+.standardmiddle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  height: 55px;
+  width: 700px;
+  margin-top: 15px;
+}
+
+.standardimg1 {
+  margin-left: 140px;
+  margin-top: 15px;
+}
+
+.standardimg2 {
+  height: 117px;
+  width: 192px;
+  margin-bottom: -86px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.arrowtext {
+  position: absolute;
+  top: 335px;
+  left: 502px;
+}
+
+.arrowtext1 {
+  position: absolute;
+  top:355px;
+  left: 502px;
+}
+
+.arrowtext2 {
+  position: absolute;
+  top:375px;
+  left: 502px;
+}
+
+p{
+  font-size:17px;
+}
+
+pp{
+  font-size:15px;
+}
+
+.bottomtext{
+  margin-top: 50px;
+  width: 800px;
+  text-align: center
+}
+
+.footbtn{
+  width: 320px;
+  height: 76px;
+  background-color: rgb(50,50,50);
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footbtn:active{
+  background-color: rgb(140, 141,142);
+}
+
+.conform{
+  background-color: rgb(103, 200, 198);
+}
+
+.conform:active{
+  background-color: rgb(164, 222, 221);
+}
+
+.doorbtn{
+  height: 73px;
+  width: 120px;
+  background-image: url(../images/Door_Button_1.png);
+  top: 510px;
+  left: 671px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-color: rgb(50,50,50);
+  border-radius: 6px;
+}
+
+.doorbtn:active{
+  background-image: url(../images/Door_Button_2.png);
+}

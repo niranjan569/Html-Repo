@@ -1,0 +1,71 @@
+#historycontent{
+	margin: auto;
+}
+
+.btnrow{
+	margin-right: 50px;
+	margin-top: 5px;
+}
+
+.cycle{
+	background-color: #323232;
+	color: white;
+	border:none;
+	height: 35px;
+	width: 170px;
+	border-radius: 6px;
+	font-weight: bold;
+	padding: 6px 35px;
+}
+
+.cycle:active{
+	background-color: rgb(140, 141,142);
+}
+
+table {
+	border-collapse: collapse;
+	background: white;
+	table-layout: fixed;
+	width: 100%;
+}
+th, td {
+	padding: 8px 16px;
+	border: 1px solid #ddd;
+	width: 260px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.pane {
+	background: #000;
+	margin-top:20px;
+	margin-left: 50px;
+}
+.pane-hScroll {
+	overflow: auto;
+	width: 700px;
+	background: #ffffff;
+}
+.pane-vScroll {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 275px;
+	background: #ffffff;
+}
+
+.footbtn{
+	width: 381px;
+	height: 85px;
+	background-color: rgb(50,50,50);
+	display: inline-block;
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.footbtn:active{
+	background-color: rgb(140, 141,142);
+}

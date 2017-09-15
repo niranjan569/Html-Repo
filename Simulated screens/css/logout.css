@@ -1,0 +1,32 @@
+.logoutcontent{
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  padding-top: 197px;
+}
+
+.footbtn{
+  width: 381px;
+  height: 85px;
+  background-color: rgb(50,50,50);
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footbtn:active{
+  background-color: rgb(140, 141,142);
+}
+
+.conform{
+  background-color: rgb(103, 200, 198);
+}
+
+.conform:active{
+  background-color: rgb(164, 222, 221);
+}

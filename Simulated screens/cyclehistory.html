@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cyclehistory.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <title>Cycle history</title>
+</head>
+
+<body onload="startTime(); dateFetch();">
+  <header>
+    <div class="row">
+      <div class="col-sm-4">
+        &nbsp;System Ready
+      </div>
+      <div class="col-sm-4 col-xs-4" id="time" style="text-align: center;"></div>
+      <div class="col-sm-4 col-xs-4" id="date" style="text-align: right;"></div>
+    </div>
+  </header>
+  <div class="main">
+    <a href="cycles.html">
+      <div class="backbutton font-white glyphicon glyphicon-triangle-left"><span style="font-weight:bold;font-size:16px;">&nbsp;Back</span></div>
+    </a>
+    <div id="historycontent" style="font-size:15px;">
+      <div class="row btnrow">
+        <div class="pull-right" style="margin-left: 5px;">
+          <select class="cycle">
+            <option selected hidden>Print Cycle</option>
+            <option>Short</option>
+            <option>Long</option>
+            <option>Parametric</option>
+          </select>
+        </div>
+        <div class="pull-right cycle">
+          <!-- style="pointer-events:none;" <button type="button" class="cyclebtn">View Cycle</button> -->View Cycle
+        </div>
+      </div>
+    </div>
+    <div class="pane pane--table1">
+      <div class="pane-hScroll">
+
+        <table>
+          <thead>
+            <th>Cycle Number</th><th>Status</th><th>Completion Time Date</th><th>Reason</th>
+          </thead>
+        </table>
+
+        <div class="pane-vScroll">
+          <table>
+            <tbody>
+              <tr><td>199</td><td>Passed</td><td>7 Nov 15 09:08 AM</td><td>Pressure out of</td></tr>
+              <tr><td>199</td><td>Passed</td><td>7 Nov 15 09:08 AM</td><td>Pressure out of</td></tr>
+              <tr><td>199</td><td>Passed</td><td>7 Nov 15 09:08 AM</td><td>Pressure out of</td></tr>
+              <tr><td>199</td><td>Passed</td><td>7 Nov 15 09:08 AM</td><td>Pressure out of</td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="font-white"style="margin-top: 28px;margin-left: 10px;">
+      <div class="footbtn" style="margin-right: 5px;">Print List</div>
+      <div class="footbtn">Data Transfer</div>
+    </div>
+  </div>
+  </html>

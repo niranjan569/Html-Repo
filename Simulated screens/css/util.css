@@ -1,0 +1,21 @@
+.utilbtns{
+    height: 70px;
+    width: 169px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgb(103, 200, 198);
+    color: white;
+    padding-top: 25px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.utilbtns:active{
+    background-color: rgb(164, 222, 221);
+}
+
+.utilrows {
+  margin-bottom: 8px;
+}

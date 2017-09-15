@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/systemconfig.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Cycle page</title>
+</head>
+
+<body onload="startTime(); dateFetch();">
+  <header>
+    <div class="row">
+      <div class="col-sm-4">
+        &nbsp;System Ready
+      </div>
+      <div class="col-sm-4 col-xs-4" id="time" style="text-align: center;"></div>
+      <div class="col-sm-4 col-xs-4" id="date" style="text-align: right;"></div>
+    </div>
+  </header>
+
+  <div class="main font-white">
+    <div class="left">
+      <div class="row1">
+        <div class="labelleft">
+          Access Control<br>Option:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" name="login" class="radio_item" id="radio1" checked>
+          <label class="label_item" for="radio1"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;User Login
+        </div>
+        <div class="radio-button2">
+          <input type="radio" name="login" class="radio_item" id="radio2">
+          <label class="label_item" for="radio2"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;No User Login
+        </div>
+      </div>
+      <div class="row2">
+        <div class="labelleft">
+          IMS:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" class="radio_item" name="ims" id="radio3" checked>
+          <label class="label_item" for="radio3"><img class="radioimg"src="images/deselectedRadio.png"/></label>&nbsp;Enabled
+        </div>
+        <div class="radio-button2">
+          <input type="radio" class="radio_item" name="ims" id="radio4">
+          <label class="label_item" for="radio4"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Disabled
+        </div>
+      </div>
+      <div class="row3">
+        <div class="labelleft">
+          Vaccum Units:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" class="radio_item" name="vaccume" id="radio5" checked>
+          <label class="label_item" for="radio5"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Torr/mTorr
+        </div>
+        <div class="radio-button2">
+          <input type="radio" class="radio_item" name="vaccume" id="radio6">
+          <label class="label_item" for="radio6"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;KPa/Pa
+        </div>
+      </div>
+      <div class="row4">
+        <div class="labelleft">
+          Load Data<br>Entry Option:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" class="radio_item" name="loade" id="radio7" checked>
+          <label class="label_item" for="radio7"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Enabled
+        </div>
+        <div class="radio-button2">
+          <input type="radio" class="radio_item" id="radio8" name="loade">
+          <label class="label_item" for="radio8"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Disabled
+        </div>
+      </div>
+      <div class="row5">
+        <div class="labelleft">
+          Load Removal<br>Option:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" class="radio_item" id="radio9"  name="loadr" checked>
+          <label class="label_item" for="radio9"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;With Login
+        </div>
+        <div class="radio-button2">
+          <input type="radio" class="radio_item"  id="radio10" name="loadr">
+          <label class="label_item" for="radio10"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Without Login
+        </div>
+      </div>
+      <div class="row6">
+        <div class="labelleft">
+          Notepad Option:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" class="radio_item"  id="radio11" name="notepad" checked>
+          <label class="label_item" for="radio11"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Enabled
+        </div>
+        <div class="radio-button2">
+          <input type="radio" class="radio_item"  id="radio12" name="notepad">
+          <label class="label_item" for="radio12"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Disabled
+        </div>
+      </div>
+      <div class="row7">
+        <div class="labelleft">
+          Auto Send<br>Network Files:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" class="radio_item"  id="radio13" name="network" checked>
+          <label class="label_item" for="radio13"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Enabled
+        </div>
+        <div class="radio-button2">
+          <input type="radio" class="radio_item"  id="radio14" name="network">
+          <label class="label_item" for="radio14"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Disabled
+        </div>
+      </div>
+      <div class="row8">
+        <div class="labelleft">
+          BI Notification:
+        </div>
+        <div class="radio-button1">
+          <input type="radio" class="radio_item"  id="radio15" name="bi" checked>
+          <label class="label_item" for="radio15"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Enabled
+        </div>
+        <div class="radio-button2">
+          <input type="radio" class="radio_item"  id="radio16" name="bi">
+          <label class="label_item" for="radio16"><img class="radioimg" src="images/deselectedRadio.png"/></label>&nbsp;Disabled
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="labelright">
+        Language Selection:
+      </div>
+      <select class="dropdown">
+        <option>English</option>
+        <option>France</option>
+        <option>Japanese</option>
+        <option>Russian</option>
+        <option>Portuguese</option>
+      </select>
+      <div class="labelright lb2">
+        BackLight Conservation<br>(Minutes):
+      </div>
+      <select class="dropdown dropdownmin" >
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option>25</option>
+      </select>
+      <div class="labelright lb3">
+        Alarm Volume:
+      </div>
+      <div class="alarmbtns">
+        <div class="minus" onclick="decrease()">
+        </div>
+        <div class="plus" onclick="increase()">
+        </div>
+      </div>
+      <div class="progressbar">
+        <div id='meter'><div id='progress' style="width: 20%;"></div> </div>
+      </div>
+      <div class="bypassbtn">
+        BI Bypass
+      </div>
+    </div>
+    <div style="margin-left: 4px;">
+      <div class="btns">
+        Sterilizer<br>Settings
+      </div>
+      <div class="btns">
+        Printer <br>settings
+      </div>
+      <div class="btns">
+        Transfer <br>Settings
+      </div>
+      <div class="btns1" onclick="location.href='utilities.html'">
+        Cancel
+      </div>
+      <div class="btns1 donebtn"  onclick="location.href='utilities.html'">
+        Done
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cycles.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <title>Cycle page</title>
+</head>
+
+<body onload="startTime(); dateFetch();">
+  <header>
+    <div class="row">
+      <div class="col-sm-4">
+        &nbsp;System Ready
+      </div>
+      <div class="col-sm-4 col-xs-4" id="time" style="text-align: center;"></div>
+      <div class="col-sm-4 col-xs-4" id="date" style="text-align: right;"></div>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="cycle-lable font-white">
+      Select Cycle Or Scan Biological Indicator TO Begin:
+    </div>
+    <div class="cycles seven-two font-white">
+      <a href="standardcycle.html"><div class="columns1 col one font-white">
+        <div class="lb1">Start</div>
+        <div class="lb2">STANDARD</div>
+        <div class="lb3">Cycle</div>
+        <div class="line">
+          <img alt="Line" src="images/Line.png">
+        </div>
+        <div class="lb4">
+          <span style="font-size: 25px">47</span>mins
+        </div>
+      </div></a>
+      <div class="columns1 col two">
+        <div class="lb1">Start</div>
+        <div class="lb2">FLEX</div>
+        <div class="lb3">Cycle</div>
+        <div class="line">
+          <img alt="Line" src="images/Line.png">
+        </div>
+        <div class="lb4">
+          <span style="font-size: 25px">42</span>mins
+        </div>
+      </div>
+      <div class="columns1 col three">
+        <div class="lb1">Start</div>
+        <div class="lb2">DUO</div>
+        <div class="lb3">Cycle</div>
+        <div class="line">
+          <img alt="Line" src="images/Line.png">
+        </div>
+        <div class="lb4">
+          <span style="font-size: 25px">60</span>mins
+        </div>
+      </div>
+      <div class="columns1 col four">
+        <div class="lb1">Start</div>
+        <div class="lb2">EXPRESS</div>
+        <div class="lb3">Cycle</div>
+        <div class="line">
+          <img alt="Line" src="images/Line.png">
+        </div>
+        <div class="lb4">
+          <span style="font-size: 25px">24</span>mins
+        </div>
+      </div>
+      <div class="columns2 col one" onclick="location.href = 'info.html'">
+        <img alt="CycleInfo" src="images/cycleInfoEnabled.png">
+      </div>
+      <div class="columns2 col two">
+        <img alt="CycleInfo" src="images/cycleInfoEnabled.png">
+      </div>
+      <div class="columns2 col three">
+        <img alt="CycleInfo" src="images/cycleInfoEnabled.png">
+      </div>
+      <div class="columns2 col four">
+        <img alt="CycleInfo" src="images/cycleInfoEnabled.png">
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="button" onclick="location.href = 'logout.html'">Logout</div>
+        <div class="button"  onclick="location.href = 'cyclehistory.html'">Cycle History</div>
+        <div class="button"  onclick="location.href = 'utilities.html'">Utilities</div>
+        <div class="buttonimg"></div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

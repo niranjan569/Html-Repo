@@ -1,0 +1,52 @@
+.seven-two{
+  width: 702px;
+  height: 203px;
+}
+a:hover{
+  cursor: default;
+}
+
+div:hover{
+  cursor: default;
+}
+
+.font-white{
+  color: white;
+}
+
+/*.cyclebtn{
+background-color: #323232;
+border-radius: 6px;
+color: white;
+padding: 6px 35px;
+}*/
+
+.backbutton{
+  border-radius: 6px;
+  background-color: rgb(50,50,50);
+  margin-left: 12px;
+  width: 90px;
+  height: 35px;
+  margin-top: 12px;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.backbutton:active{
+  background-color: rgb(140, 141,142);
+}
+
+header {
+  height: 35px;
+  width: 800px;
+  background-color: rgb(50,50,50);
+  color: rgb(214,215,216);
+  padding-top: 4px;
+  font-size:17px;
+}
+
+.main{
+  height: 565px;
+  width: 800px;
+  background-color: #000;
+}

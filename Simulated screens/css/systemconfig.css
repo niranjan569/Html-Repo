@@ -1,0 +1,238 @@
+.left{
+  width: 520px;
+  height: 480px;
+  display: inline-block;
+  padding-top: 30px;
+}
+.right{
+  width: 275px;
+  height: 480px;
+  display: inline-block;
+}
+
+.labelleft{
+  text-align: right;
+  display: inline-block;
+  font-size: 17px;
+  width: 135px;
+  font-weight: bold;
+}
+
+.labelright{
+  font-size: 17px;
+  font-weight: bold;
+  position: absolute;
+  padding-top: 58px;
+  padding-left: 30px;
+}
+
+.row1{
+  position: absolute;
+  margin-left: 50px;
+}
+.row2{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.row3{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 120px;
+}
+
+.row4{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 158px;
+}
+.row5{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 215px;
+}
+.row6{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 285px;
+}
+
+.row7{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 330px;
+}
+
+.row8{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 400px;
+}
+
+.radio-button1{
+  display: inline-block;
+  width: 120px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+/*input[type=radio]{
+display: none;
+}
+
+input[type=radio]  + lable{
+background-color: red;
+margin: -2px;
+padding: 4px 12px;
+border-color: red;
+display: inline-block;
+}*/
+
+.radio-button2{
+  display: inline-block;
+  width: 120px;
+  margin-left: 35px;
+  font-size: 15px;
+}
+
+.dropdown{
+  width: 220px;
+  height: 35px;
+  color: black;
+  position: absolute;
+  border-radius: 6px;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+.dropdownmin{
+  margin-top: 180px;
+}
+.lb2{
+  margin-top: 75px;
+}
+.lb3{
+  margin-top: 198px;
+}
+.minus{
+  display: inline-block;
+  height: 35px;
+  width: 106px;
+  background-image: url("../images/Minus.png");
+}
+
+.minus:active{
+  background-image: url("../images/Minus_Pressed.png");
+}
+
+.plus{
+  display: inline-block;
+  margin-left: 5px;
+  height: 35px;
+  width: 106px;
+  background-image: url("../images/Plus.png");
+}
+
+.plus:active{
+  background-image: url("../images/Plus_Pressed.png");
+}
+
+.alarmbtns{
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 290px;
+}
+
+.btns{
+  display: inline-block;
+  height: 75px;
+  width: 155px;
+  background-color: rgb(50,50,50);
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 15px;
+      font-weight: bold;
+      font-size: 17px;
+}
+
+.btns:active{
+  background-color: rgb(140, 141,142);
+}
+
+.btns1{
+  height: 75px;
+  width: 155px;
+  background-color: rgb(50,50,50);
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 28px;
+    font-weight: bold;
+    font-size: 17px;
+    position: absolute;
+    top: 520px;
+    left: 481px;
+}
+
+.btns1:active{
+  background-color: rgb(140, 141,142);
+}
+
+.donebtn{
+  background-color: rgb(103, 200, 198);
+  position: absolute;
+  top: 520px;
+  left: 640px;
+}
+
+.donebtn:active{
+  background-color: rgb(164, 222, 221);
+}
+#meter {border:5px solid rgb(50,50,50);width: 230px;;background-color: rgb(50,50,50);border-radius:10px;}
+#progress {background-color: rgb(103, 200, 198);height:15px;width:0%;border-radius:10px;}
+
+.progressbar{
+  position: absolute;
+  margin-left: 26px;
+    margin-top: 335px;
+}
+.bypassbtn{
+  width: 220px;
+  height: 75px;
+  position: absolute;
+  background-color: rgb(50,50,50);
+  border-radius: 5px;
+  font-size: 17px;
+  margin-left: 30px;
+  margin-top: 375px;
+  text-align: center;
+  padding-top:28px;
+  font-weight: bold;
+}
+
+.bypassbtn:active{
+  background-color: rgb(140, 141,142);
+}
+
+.radioimg{
+  margin-bottom: 9px;
+}
+
+.radio_item{
+  display: none !important;
+}
+
+.label_item: {
+  /*opacity: 0.1;*/
+  /*background-image: url("../images/selectedRadio.png");*/
+}
+
+.radio_item:checked + label {
+  /*opacity: 1;*/
+  background-image: url("../images/selectedRadio.png");
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+label {
+  cursor: pointer;
+}

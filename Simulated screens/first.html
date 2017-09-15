@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+function myFunction() {
+  var left = (screen.width/2)-(800/2);
+  var top = (screen.height/2)-(600/2);
+  var myWindow = window.open("index.html", "", "statusbar=no,toolbar=no,scrollbars=no,resizable=no,top="+top+",left="+left+",width=800,height=600");
+  myWindow.focus();
+}
+function winClose(){
+  window.close();
+}
+</script>
+<body>
+  <script type="text/javascript">
+    myFunction();
+    winClose();
+  </script>
+</body>
+</html>
+
+<!-- dom.allow_scripts_to_close_windows
+dom.disable_window_open_feature.location
+https://stackoverflow.com/questions/15926105/hiding-the-address-bar-of-a-browser
+https://stackoverflow.com/questions/15926105/hiding-the-address-bar-of-a-browser
+https://stackoverflow.com/questions/3465191/window-close-self-close-not-working-on-mozilla-firefox
+https://stackoverflow.com/questions/10790880/resizeto-not-working-in-firefox -->
